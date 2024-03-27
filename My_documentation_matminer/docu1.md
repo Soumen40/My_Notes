@@ -12,6 +12,7 @@ will be documented over here
 3. Activate matminer envs: conda activate matminer
 
 4. Go to where you downloaded the package matminer and install it
-        pip install -e .  # This ype of installation allows you to et the acess of changes you could make in side any code file inside this package
 
-5. 
+5.        pip install -e .  # This ype of installation allows you to et the acess of changes you could make in side any code file inside this package
+
+6. 
