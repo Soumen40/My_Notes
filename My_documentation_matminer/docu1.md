@@ -15,4 +15,8 @@ will be documented over here
 
 5.        pip install -e .  # This ype of installation allows you to et the acess of changes you could make in side any code file inside this package
 
-6. 
+6. Now inside matminer install the following packages using pip
+    pip install ipython
+    pip install ipywidgets
+    pip install ipykernel
+
