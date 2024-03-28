@@ -134,13 +134,16 @@ Now I am getting some error massages while running already runnable script
 Solution:
 
 Read the error massage:
+
     See which module need to be upgrade in error massage
+
     go to pypi(chrome)
+    
     look the current version of that module, 
     run this
 
         pip install --upgrade module_name 
-        
+
         or this
 
         pip install module_name=current_version_from_pypi
