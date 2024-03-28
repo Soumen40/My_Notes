@@ -1,1 +1,5 @@
+"""
+Here put all ML related informations
+"""
 
+Typical error bar for prediction a chemical property by ML is 40 meV/atom (remember)
