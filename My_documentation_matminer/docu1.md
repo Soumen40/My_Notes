@@ -23,7 +23,13 @@ will be documented over here
     
     pip install ipykernel
 
+    pip install mp-api
+    
+    pip install phonopy
+
 7. Check this site for different packages
 
         https://pypi.org/project/ipykernel/
+
+8. 
 
