@@ -23,3 +23,7 @@ will be documented over here
     
     pip install ipykernel
 
+7. Check this site for different packages
+
+        https://pypi.org/project/ipykernel/
+
