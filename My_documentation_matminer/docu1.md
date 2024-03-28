@@ -129,3 +129,18 @@ Successfully installed joblib-1.3.2 matminer-0.9.3.dev1 pandas-2.2.1 requests-2.
 
 
 
+Therefore the above is the problem
+Now I am getting some error massages while running already runnable script
+Solution:
+
+Read the error massage:
+    See which module need to be upgrade in error massage
+    go to pypi(chrome)
+    look the current version of that module, 
+    run this
+
+        pip install --upgrade module_name 
+        
+        or this
+
+        pip install module_name=current_version_from_pypi
