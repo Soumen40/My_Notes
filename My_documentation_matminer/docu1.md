@@ -31,7 +31,8 @@ will be documented over here
 
         https://pypi.org/project/ipykernel/
 
-8. 
+  Use pip check command
+8.
 
         Things which are uninstall during my mistake : I was installing matminer in base 
 
