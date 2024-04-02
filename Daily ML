@@ -1,0 +1,25 @@
+Other way of doing with pandas dataframe
+
+home_data = pd.read_csv(iowa_file_path)
+y = home_data.SalePrice
+#y = home_data["SalePrice"].values # here the error is data in ND arraey
+
+# Feature selection from your dataframe (drop methods works for small no of columns)
+feature_names = ["LotArea", "YearBuilt", "1stFlrSF", "2ndFlrSF", "FullBath"]
+
+X=home_data[feature_names]
+
+from sklearn.tree import DecisionTreeRegressor
+#specify the model. 
+#For model reproducibility, set a numeric value for random_state when specifying the model
+iowa_model = DecisionTreeRegressor(random_state=1)
+
+# Fit the model
+iowa_model.fit(X,y)
+
+predictions = iowa_model.predict(X)
+print(predictions)
+
+# Check how much accuaratelt the model is predicting by comparing first few y value with predictions you defined
+
+home_data.head()
