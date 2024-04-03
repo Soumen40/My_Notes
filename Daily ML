@@ -2,6 +2,9 @@ Other way of doing with pandas dataframe
 
 Here I can learn A whole process of Machine Learning (data generation, feature generation, making X and y, ML model, validation of model, improvement of model
 
+For various different tools to use in ML
+https://github.com/JuDFTteam/best-of-atomistic-machine-learning
+
 home_data = pd.read_csv(iowa_file_path)
 y = home_data.SalePrice
 #y = home_data["SalePrice"].values # here the error is data in ND arraey
