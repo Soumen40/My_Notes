@@ -1,0 +1,6 @@
+Feature generation from POSCAR by myself and put them into the database
+1. Surface Area
+2. Surface energy ( might need to calculate for each pristine nanoparticles already optimized using the formula in "Stability and Electronic Structures of Pt-Rh Icosahedral Nanoparticles")
+3. Diameter (size)
+4. Coordination number of each surface atoms (Code avialable here: "Size‑, Shape‑, and Composition-Dependent Model for Metal Nanoparticle Stability Prediction")
+5. Elemental features from matminer (Please look into DScribe and RDKIt) (difference in atomic radius, electronegativity etc)
