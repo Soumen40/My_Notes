@@ -1,0 +1,5 @@
+
+Why we go to the reciprocal space for periodic system
+  1. Calculation faster
+  2. Size of the plane wave basis set get reduced if the Brillouin zone size reduced
+  3. We need less number of KPOINTS for larger system in reciprocal space
