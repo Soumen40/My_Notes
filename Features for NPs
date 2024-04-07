@@ -2,6 +2,10 @@ Feature generation from POSCAR by myself and put them into the database
 1. Surface Area
 2. Surface energy ( might need to calculate for each pristine nanoparticles already optimized using the formula in "Stability and Electronic Structures of Pt-Rh Icosahedral Nanoparticles")
 3. Diameter (size)
+    Note: How to get radius (r)
+        1. find out central atom and get largest distance from it which will be r
+        2. As the structure get distorted, you know the central position thn do point no 1 (suitable if structure is symmetrycally distorted around center ----- check this)
+
 4. Coordination number of each surface atoms (Code avialable here: "Size‑, Shape‑, and Composition-Dependent Model for Metal Nanoparticle Stability Prediction")
 5. We can use normal distance cutoff to get generalize coordination number (put cut off 3 angs all atoms inside that distance are the CN)
 
