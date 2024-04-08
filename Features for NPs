@@ -9,4 +9,10 @@ Feature generation from POSCAR by myself and put them into the database
 4. Coordination number of each surface atoms (Code avialable here: "Size‑, Shape‑, and Composition-Dependent Model for Metal Nanoparticle Stability Prediction")
 5. We can use normal distance cutoff to get generalize coordination number (put cut off 3 angs all atoms inside that distance are the CN)
 
-5. Elemental features from matminer (Please look into DScribe and RDKIt) (difference in atomic radius, electronegativity etc)
+6. Use graph based method to generate structural feature after getting CN for all atoms ( or you can take surface atoms only ) using Sucheta di's code
+
+
+
+10. Elemental features from matminer (Please look into DScribe and RDKIt) (difference in atomic radius, electronegativity etc)
+11. Use state = ("range") to get difference in values of elemental properties (from ElementalProperty class)
+                = ("mean") for composition weigthed elemental properties
