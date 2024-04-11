@@ -1,0 +1,16 @@
+
+
+Say I want to Calculate charge density difference of O2 adsorption on a heterogeneous catalyst surface
+steps:
+    1. I have optimize structure of the total O2 adsorbed catalyst system
+    2. Find out (NGX, NGY, NGZ, NGXF, NGYF, NGZF) valuse from the OUTCAR file of above
+    3. Create two structures from the optimize one, one will have only O2 (delete other atom from the CONTCAR) 
+       and 2nd will have only catalyst (delete O2)
+    4. Do single point calculation for both the structures with  (NGX, NGY, NGZ, NGXF, NGYF, NGZF) values in INCAR
+    5. Using chgsum.pl add CHGCAR of newly generated structures --- CHGCAR_sum
+    6. Use chgdif.pl to take the difference between CHGCAR of actual adsorbed structure and CHGCAR_sum
+    7. Plot CHGCAR_dif (generated in last point) in VESTA change the isosurface values a bit to get nicer plot
+
+
+        .pl file from vtsttool
+       
