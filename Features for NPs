@@ -11,7 +11,13 @@ Feature generation from POSCAR by myself and put them into the database
 
 6. Use graph based method to generate structural feature after getting CN for all atoms ( or you can take surface atoms only ) using Sucheta di's code
 
+7. Update----
+    I have my own code for finding out avg CN of total NP as well as avg surface atoms CN
+    Next I add surface energy as it is an important features 
+    Surface energy is calculated based on no of different surafce atoms present at the surface and from their per atom surface energy
+    Next I add the lattice mishmatch, idea-- by explicitly looing into evry CONTCAR
 
+8. Need to do --- Graph based Structural features
 
 10. Elemental features from matminer (Please look into DScribe and RDKIt) (difference in atomic radius, electronegativity etc)
 11. Use state = ("range") to get difference in values of elemental properties (from ElementalProperty class)
