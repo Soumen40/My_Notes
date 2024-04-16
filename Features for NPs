@@ -16,6 +16,9 @@ Feature generation from POSCAR by myself and put them into the database
     Next I add surface energy as it is an important features 
     Surface energy is calculated based on no of different surafce atoms present at the surface and from their per atom surface energy
     Next I add the lattice mishmatch, idea-- by explicitly looing into evry CONTCAR
+    Another point I add, for which I couldn't find any meaning (composition weighted lattice mishmatch)
+    As lattice mismatch is constant for two different elements always, however, the distortion is different for different composition of same two elements.  Let see what happens with this feature 
+    
 
 8. Need to do --- Graph based Structural features
 
