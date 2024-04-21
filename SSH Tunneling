@@ -1,0 +1,13 @@
+For SSH Tunneling
+
+
+1. open WSL in your windows powershell
+2. login to your virtual dextop
+3. go to the directory where you want to run jupter (also activate if any env explicitly required)
+4. use command---- jupyter lab --no-browser --port 9783
+5. open another windows powershell in your laptop
+6. go to suitable diretory in your laptop
+7. use command ----- 
+ssh -NL 9783:localhost:9783 user@ipadress
+then put password (if passwordless login is not activated)
+8. Then click ctl+enter to any of the link generated in step 4
