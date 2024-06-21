@@ -11,6 +11,7 @@ steps:
     6. Use chgdif.pl to take the difference between CHGCAR of actual adsorbed structure and CHGCAR_sum
     7. Plot CHGCAR_dif (generated in last point) in VESTA change the isosurface values a bit to get nicer plot
     
+    ref path ---- /home/thsim2/Documents/Soumen/project/Collaboration/with_kk_nanda/CER/analysis/chg_diff
 
 
         .pl file from vtsttool
