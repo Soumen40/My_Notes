@@ -1,3 +1,14 @@
+Calculation Procedure
+
+1. Do an scf calculation using suitable INCAR for COHP
+2. Copy labstar and wsDragon executer to the folder of scf calculation
+3. run the command ----- ./lobstar lobstarin 
+    lobstarin is the input file which specifies which orbital to take and between which atom we want the ICOHP
+4. The above command will create several files, more improtant are the two ---- ICOHPLIST.lobster and COHPCAR.lobster
+
+5. ICOHPLIST.lobster file provides the information about the ICOHP value
+
+6. To plot the pCOHP ---- mannually open wsDragon (double click) and open the file COHPCAR.lobster, now you can plot
 
 
 Find out which file contains the orbital contribution data (start with G)
