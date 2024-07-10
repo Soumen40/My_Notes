@@ -1,0 +1,10 @@
+
+1. Install VASP.6.x.x
+2. Go to VASP.6.x.x folder,
+    vi makefile.include (check the file)
+    module list
+    module avail
+    module load compiler/intel/2018 (this things will be shown by previous commands)
+    module list
+    make veryclean
+    make all
