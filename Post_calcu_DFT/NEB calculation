@@ -1,0 +1,8 @@
+Step-1  Preparation of Input files
+a) Find out the two extreme optimum structure and give name as POSCAR1(initian CONTCAR) POSCAR2(final CONTCAR)
+b) Collect vtst script (nebmake.pl, Vasp.pm) to that folder
+c) Image generatioin---- perl nebmake.pl POSCAR1 POSCAR2 5 (5 is the number of images you want)
+d) Copy INCAR, KPOINTS and POTCAR to the main folder 
+e) Run job. If system is large, 
+    i) First run NEB (IOPT = 1, LCLIMB = .FALSE., and with low accuracy)
+    ii) Then you can run (if nedded) CI-NEB
