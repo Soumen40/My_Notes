@@ -5,3 +5,4 @@ Afetr optimization of the system do an SCF calculation with LELF = .TRUE.
 Plot the ELFCAR in vesta to see the electron localization around each element and bond
 Red --- indicates high electron density while Blue ---- indicates low electron density
 
+Follow the paper: Simultaneous Site Adsorption Shift and Efficient CO Oxidation Induced by V and Co in Pt Catalyst
