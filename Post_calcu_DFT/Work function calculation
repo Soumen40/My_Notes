@@ -1,1 +1,41 @@
+First generate LOCPOT file by running a SCF with the following INCAR file
+
+        SYSTEM = Graphene
+        ISTART = 0
+        #ISIF = 3
+        ISMEAR =  0
+        SIGMA = 0.01
+        EDIFF =  1E-5
+        ENCUT = 450
+        EDIFFG = -0.01
+        IBRION = 2
+        #POTIM = 0.5
+        NSW  = 0
+        ISPIN = 2
+        NCORE = 48
+
+        #DFT-D3
+
+        #IVDW = 11
+
+        # Not Write
+
+        LWAVE = .FALSE.
+        #LCHARG =- .FALSE.
+        # LOCPOT calculation
+
+        LVHAR = .TRUE.
+        LVTOT = .TRUE.
+
+        ALGO = FAST
+
+1. Plot the Z-component of the LOCPOT from P4Vasp
+    Calculate the vacuum energy from the plot, take the energy value for maximum z (which is along x-axis here)
+
+2. Find out the Fermi energy from OUTCAR---- grep fermi OUTCAR (take E-fermi value)
+
+3. Take the difference (Evacuum - Efermi). This is the work function for the material
+
+
+
 
