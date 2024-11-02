@@ -4,6 +4,9 @@ Calculation Procedure
 2. Copy labstar and wsDragon executer to the folder of scf calculation
 3. run the command ----- ./lobstar lobstarin 
     lobstarin is the input file which specifies which orbital to take and between which atom we want the ICOHP
+
+    (An example of lobstarin file present in path---- /home/thsim2/Documents/cohp-cal)
+    
 4. The above command will create several files, more improtant are the two ---- ICOHPLIST.lobster and COHPCAR.lobster
 
 5. ICOHPLIST.lobster file provides the information about the ICOHP value
