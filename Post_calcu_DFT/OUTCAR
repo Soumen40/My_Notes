@@ -1,0 +1,4 @@
+Most of the things which we need to know are present in OUTCAR
+Starting from reciprocal lattice vectors (scaled by 2pi, to find in OUTCAR search by /2pi) (if you want to calculate reciprocal space volume you can use those vector and need to multiply by 2pi)
+Force on each atoms are given at the final Total force section while optimizing 
+Stress are given in vasprun.xml (search by ?stress) (? sign is for the final value of what you are looking for)
