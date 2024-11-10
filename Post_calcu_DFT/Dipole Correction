@@ -1,0 +1,5 @@
+Why Dipole correction needed
+
+In a typical slab geometry, where one dimension is much larger than the others (e.g., a 2D material), the periodicity in the direction perpendicular to the surface can give rise to an 
+artificial dipole moment. This happens because the top and bottom surfaces of the slab will have different potentials, which, under periodic boundary conditions, is unphysical for many systems of interest. 
+The dipole correction compensates for this by adding a correction potential along the direction perpendicular to the surface. 
