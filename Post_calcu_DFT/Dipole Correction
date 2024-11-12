@@ -3,3 +3,8 @@ Why Dipole correction needed
 In a typical slab geometry, where one dimension is much larger than the others (e.g., a 2D material), the periodicity in the direction perpendicular to the surface can give rise to an 
 artificial dipole moment. This happens because the top and bottom surfaces of the slab will have different potentials, which, under periodic boundary conditions, is unphysical for many systems of interest. 
 The dipole correction compensates for this by adding a correction potential along the direction perpendicular to the surface. 
+
+# Tags for dipole corrections
+IDIPOL = 3                # Correct for dipole moment along the z-axis (if surface normal is along z) use for slab model
+LDIPOL = .TRUE.
+DIPOL = 0.4969 0.5149 0.5  (This value of DIPOL we can get from the POSCAR and CHGCAR as input from get_DIPOL.py at Docu)
