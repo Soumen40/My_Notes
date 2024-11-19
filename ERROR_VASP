@@ -1,1 +1,16 @@
+Put the different ERROR related to the VASP calculations
+
+1. POSCAR found type information on POSCAR  
+ ERROR: the type information is not consistent with the number of types
+ solution: just rearrange the element name and corresponding coordinates
+
+2. For vibrational frequency calculation with large system + adsorbate use LREAL = Auto, ALGO = FAST, MAXMIX = 60
+
+3. subspace matrix is not hermitian ----- put IALGO = 48
+
+4. For some relaxation if giving error put IBRION = 1, delete ENCUT
+
+5. 
+
+
 
