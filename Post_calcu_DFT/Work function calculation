@@ -28,6 +28,8 @@ First generate LOCPOT file by running a SCF with the following INCAR file
         LVTOT = .TRUE.
 
         ALGO = FAST
+        Either LVHAR or LVTOT must be set true
+
 
 1. Plot the Z-component of the LOCPOT from P4Vasp
     Calculate the vacuum energy from the plot, take the energy value for maximum z (which is along x-axis here)
@@ -35,6 +37,9 @@ First generate LOCPOT file by running a SCF with the following INCAR file
 2. Find out the Fermi energy from OUTCAR---- grep fermi OUTCAR (take E-fermi value)
 
 3. Take the difference (Evacuum - Efermi). This is the work function for the material
+
+Reference:
+https://www.vasp.at/wiki/index.php/Computing_the_work_function#Example
 
 
 
