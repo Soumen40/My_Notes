@@ -5,7 +5,7 @@ Here's how to exactly create the disordered structure using SQS
 
 
 
-2. For Fractional concentration (eg. Te=0.6666,Se=0.3334)
+2. For Fractional concentration (eg. Te=0.6666,Se=0.3334) [one suggesion Increase the decimal points]
 a) Create the input file rndstr.in (eg. /home/mrcuser/soumen/coll/Deparment/Ravi-Sir/disor/Bi2Te2Se/2x2_try)
 b) run the command corrdump -l=rndstr.in -ro -noe -nop -clus -2=7 (Find out meaning of all terms)
 -l=rndstr.in: This specifies the input file (rndstr.in) that contains the random structure information. The -l option is used to load this file.
