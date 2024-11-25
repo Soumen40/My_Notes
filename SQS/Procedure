@@ -29,4 +29,6 @@ e) for large system forcefully stop after few time
 f) Convert bestsqs.out to POSCAR.cif using the command: str2cif <bestsqs.out> POSCAR.cif
 g) check the concentration is desirable or not as you wanted (say te:Se = 2:1)
 
+This is the local path /home/thsim2/Documents/Soumen/project/Collaboration/Department/Ravi-Sir/Bi2Te2Se/new/sqs/new/2x2/2x2_try
+
 
