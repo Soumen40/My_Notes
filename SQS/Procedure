@@ -1,1 +1,32 @@
+Here's how to exactly create the disordered structure using SQS
+1. For Divisible concentration
+    write it for later
+
+
+
+
+2. For Fractional concentration (eg. Te=0.6666,Se=0.3334)
+a) Create the input file rndstr.in (eg. /home/mrcuser/soumen/coll/Deparment/Ravi-Sir/disor/Bi2Te2Se/2x2_try)
+b) run the command corrdump -l=rndstr.in -ro -noe -nop -clus -2=7 (Find out meaning of all terms)
+-l=rndstr.in: This specifies the input file (rndstr.in) that contains the random structure information. The -l option is used to load this file.
+
+-ro: This option stands for "read-only". It indicates that the input file should be read without making any modifications to it.
+
+-noe: This stands for "no energy". It tells the program not to calculate or consider the energy of the configurations.
+
+-nop: This stands for "no output". It suppresses the output of certain files or information that might be generated during the process.
+
+-clus: This option is used to specify the cluster interactions. It is typically followed by a specification of the type and size of clusters to be considered.
+
+-2=7: This specifies that pair (2-body) interactions up to a distance of 7 units should be considered. The -2 indicates pair interactions, and =7 sets the maximum distance for these interactions.
+Change the value of interaction distance if not work or use
+corrdump -l=rndstr.in -ro -noe -nop -clus -2=7
+-3=10 (three body interaction)
+
+c) Create sqscell.out file (eg. look into the path /home/mrcuser/soumen/coll/Deparment/Ravi-Sir/disor/Bi2Te2Se/2x2_try)
+d) run mcsqs -rc
+e) for large system forcefully stop after few time
+f) Convert bestsqs.out to POSCAR.cif using the command: str2cif <bestsqs.out> POSCAR.cif
+g) check the concentration is desirable or not as you wanted (say te:Se = 2:1)
+
 
