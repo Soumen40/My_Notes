@@ -24,7 +24,7 @@ First generate LOCPOT file by running a SCF with the following INCAR file
         #LCHARG =- .FALSE.
         # LOCPOT calculation
 
-        LVHAR = .TRUE.
+        #LVHAR = .TRUE.
         LVTOT = .TRUE.
 
         ALGO = FAST
