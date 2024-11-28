@@ -1,1 +1,8 @@
 
+KPOINTS and ENCUT convergence problem can be solved
+
+It is not neccesarily the fact that the total energy will always decrease with the increament of KPOINTS or ENCUT
+
+
+However you need to find out where there is not difference in total energy while mauntaining a certail treshold (10^-4 eV)
+There is reference: Find in Teams
