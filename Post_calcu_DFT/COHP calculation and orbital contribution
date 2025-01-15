@@ -15,3 +15,9 @@ Calculation Procedure
 
 
 Find out which file contains the orbital contribution data (start with G)
+
+Fine Tuning the COHP calculation
+
+Number of KPOINTS must be greater than 4 for ISMEAR = -5 to be worked (which is must for the COHOP calculation)
+WAVECAR is needed, CHGCAR is not needed.
+Sample INCAR present in "/scratch/mrcshib/soumen/CO2RR/resukt_expla/cohp/au-cohp/chg-au-COH"
