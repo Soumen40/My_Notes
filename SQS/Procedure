@@ -23,6 +23,9 @@ Change the value of interaction distance if not work or use
 corrdump -l=rndstr.in -ro -noe -nop -clus -2=7
 -3=10 (three body interaction)
 
+you usually get a waring --- unit cell is not primitive, and usually it get converge and two new files will be generated 
+clusters.out and sym.out. 
+
 c) Create sqscell.out file (eg. look into the path /home/mrcuser/soumen/coll/Deparment/Ravi-Sir/disor/Bi2Te2Se/2x2_try)
 d) run mcsqs -rc
 e) for large system forcefully stop after few time
