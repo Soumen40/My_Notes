@@ -1,10 +1,50 @@
 
-1. Install VASP.6.x.x
-2. Go to VASP.6.x.x folder,
-    vi makefile.include (check the file)
-    module list
-    module avail
-    module load compiler/intel/2018 (this things will be shown by previous commands)
-    module list
-    make veryclean
-    make all
+"""
+This is the more details way for vasp, vtst as well as vaspsol integration
+
+"""
+
+This for for 
+	1. Installation of vasp.6.3.2 and integration with vaspsol.
+	2. Integration of vtst with vasp.6.3.2 and final integration with vasp_vtst.6.3.2 with vaspsol
+
+A. For vasp installation:
+
+	1. Download the version if you have license 
+	2. Go to the vasp 6.x.x directory : cp arch/makefile.include.intel makefile.include
+		modify the MLK root (where is your compiler: Take a look into the already compiled vasp6.x.x/makefile.include)
+	3. module load intel_ps_xe_2020.4.304 (load the intel compiler available)
+	4. make veryclean
+	5. make std (if build then run make all)
+	6. Run a test calculation 
+
+B. Vaspsol intergation in vasp6.x.x:
+	
+	1. Copy the original compiled vasp6.x.x to vasp.6.x.x_sol
+	2. Go to the vasp.6.x.x_sol directory: copy the solvation.F to the vasp.6.x.x_sol/src and the patch file in the vasp.6.x.x_sol directory 
+		solvation.F and the patch files are from developer
+	3. Inside vasp.6.x.x_sol directory: run: patch -p1 < vasp.6.x.x_patch
+	4. Modify the makefile.include: Add extra "CPP_OPTIONS += -Dsol_compat" in the CPP_OPTIONS section as last line (see the modified .include file)
+	5. Do 3, 4, and 5th steps of A
+	6. Run a test calculation
+
+C. For vtst integration:
+	
+	Copy the compiled vasp6.x.x for safely and then do this
+	
+	1. Download the vtstcode from https://theory.cm.utexas.edu/vtsttools/download.html
+	2. Follow the instruction to first copy .F files from vtst6.x.x to your src, then modify main.F and .objects file inside src (https://theory.cm.utexas.edu/vtsttools/installation.html)
+	3. One thing: use the chain.F of the vtst6.x.x (As one sentence is confusing about which chain.F need to use in the above link)
+	4. Change the makefile.include (add this CPP_OPTIONS += -Duse_vtst in the CPP_OPTIONS section as last line)
+	5. Finally install (3, 4, and 5th steps of A)
+	6. Run a test calculation
+
+D. For vaspsol integration with vasp6.x.x_vtst:
+
+	Copy the vasp6.x.x_vtst to vaspsol6.x.x_vtst
+	1. Go to the vaspsol6.x.x_vtst directory copy the solvation.F to the vasp.6.x.x_sol/src and the patch file to the vasp.6.x.x_sol directory
+		solvation.F and the patch files are from developer
+	2. Inside vasp.6.x.x_sol directory: run: patch -p1 < vasp.6.x.x_vtst_patch 
+	3. Modify the makefile.include: Add extra "CPP_OPTIONS += -Dsol_compat" in the CPP_OPTIONS section as last line (see the modified .include file)
+	4. Do 3, 4, and 5th steps of A
+	5. Run a test calculation
