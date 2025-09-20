@@ -12,7 +12,7 @@ A. For vasp installation:
 
 	1. Download the version if you have license 
 	2. Go to the vasp 6.x.x directory : cp arch/makefile.include.intel makefile.include
-		modify the MLK root (where is your compiler: Take a look into the already compiled vasp6.x.x/makefile.include)
+		modify the MLK root (where is your compiler: Take a look into the already compiled vasp6.x.x/makefile.include, or get the path using the "which ifort" command)
 	3. module load intel_ps_xe_2020.4.304 (load the intel compiler available)
 	4. make veryclean
 	5. make std (if build then run make all)
