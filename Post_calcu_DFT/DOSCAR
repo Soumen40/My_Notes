@@ -1,1 +1,37 @@
+This is for structure of DOSCAR and how to calculate the d-band properties
+What each line means
+(1) line 1   →   number of ions (natoms) + some header
+(2) lines 2–5 → system and geometry metadata
+(3) line 6   →   energy range and Fermi energy
+(4) next NEDOS (= ndos) lines   →   TOTAL DOS (for all atoms)
+(5) atom 1 block:
+        1 header line
+        NEDOS lines (E  s_up  p_y_up  p_z_up  p_x_up  d_xy_up ... d_x2_up  s_dn ... d_x2_dn)
+(6) atom 2 block:
+        1 header line
+        NEDOS lines
+(7) atom 3 block:
+        ...
 
+        Header (5 lines)	1–5	global metadata
+Global energy/Fermi line	6	contains Emax Emin NEDOS EF Ewidth
+Total DOS (for system)	7–307	301 lines (ndos)
+Atom 1 header	308	blank or comment line
+Atom 1 PDOS	309–609	301 lines (for first atom)
+Atom 2 header	610	blank/comment line
+Atom 2 PDOS	611–911	next 301 lines
+...	...	repeats for all atoms
+
+
+This is pDOS value for each atom (After a header First ndos lines is for atom 1, 2nd ndos lines for atom 2,... )
+ISPIN = 2, and LORBIT = 11
+E   s_up  p_y_up  p_z_up  p_x_up  d_xy_up  d_yz_up  d_z2_up  d_xz_up  d_x2_up s_dn  p_y_dn  p_z_dn  p_x_dn  d_xy_dn  d_yz_dn  d_z2_dn  d_xz_dn  d_x2_dn
+
+
+
+calculattion of properties:
+
+Once get the value you can use your favorite tools (from ase.dft import get_distribution_moment 
+for d-band centre, width with moment1, 2 respectively)
+
+For other properties see the code d_band_properties.py
