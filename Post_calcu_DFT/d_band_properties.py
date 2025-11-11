@@ -1,3 +1,11 @@
+
+#Ref
+#DOI	https://doi.org/10.1039/C6RA04345C, https://doi.org/10.1016/S1381-1169(96)00348-2, DOI: 10.1007/s11244-013-0159-2
+
+
+
+
+
 import warnings
 warnings.filterwarnings('ignore')
 from pymatgen.io.vasp import Vasprun
