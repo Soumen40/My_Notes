@@ -1,1 +1,6 @@
+For Heterostructure generation you can use the VASPKIT
 
+Open VASPKIT
+804) Build Heterostructure by Two Specified Slabs
+Put two POSCAR (POSCAR1 POSCAR2) in that folder and provide the thresshold values
+Now it will generate many structure find your suitable one
