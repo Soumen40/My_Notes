@@ -1,0 +1,11 @@
+sumo-dosplot --elements Co.d,C.s.p,O.s.p  --atoms Co.8,C.1,O.1 --no-total -g 0.06 --legend-cutoff 0 --yscale 50 --zero-line --xmax 4.0 --xmin -10.0   --format png
+
+for single element:
+sumo-dosplot --elements Al.s.p --no-total -g 0.06 --legend-cutoff 0 --yscale 500 --zero-line --xmax 4.0 --xmin -10.0 --format png
+
+for multiple element with all atoms:
+sumo-dosplot --elements Cu.d,Al.s.p --no-total -g 0.06 --legend-cutoff 0 --yscale 50 --zero-line --xmax 4.0 --xmin -10.0 --format png
+
+
+for multiple (or single) element with specified atoms
+sumo-dosplot --elements Co.d,C.s.p,O.s.p  --atoms Co.8,C.1,O.1 --no-total -g 0.06 --legend-cutoff 0 --yscale 50 --zero-line --xmax 4.0 --xmin -10.0   --format png
